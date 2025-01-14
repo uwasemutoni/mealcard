@@ -1,0 +1,158 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+   
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #070707;
+  }
+  
+  .nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #1b2c5c;
+    font-size: 1rem;
+  }
+  
+  .nav a:hover {
+    color: #240d5a;
+  }
+  
+  .main {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .text {
+    max-width: 600px;
+  }
+  
+  .text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .text p {
+    margin-bottom: 1.5rem;
+   
+  }
+  
+ 
+  /* Footer Styling */
+.footer {
+  background-color: #f8f9fa; /* Light gray background */
+  font-size: 0.9rem; /* Slightly smaller font */
+  color: #333; /* Dark gray text */
+  border-top: 1px solid #e9ecef; /* Subtle border at the top */
+}
+
+.footer h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+p{
+    display: flex;
+}
+  
+
+ /* Footer Styling */
+footer {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px; /* Adds padding inside the footer */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    color: #333; /* Dark gray text */
+    border-top: 1px solid #ddd; /* Subtle top border */
+  }
+  
+  /* Styling the list */
+  footer ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0 0 10px 0; /* Adds spacing below the list */
+  }
+  
+  footer ul h6 {
+    font-weight: bold; /* Bold title for the list */
+    margin-bottom: 10px; /* Adds spacing below the title */
+  }
+  
+  footer ul li {
+    margin-bottom: 5px; /* Adds spacing between list items */
+  }
+  
+  /* Footer paragraphs */
+  footer p {
+    margin: 10px 0; /* Adds spacing between paragraphs */
+    font-size: 0.9rem; /* Slightly smaller font size for consistency */
+  }
+  
+  /* Footer links */
+  footer a {
+    text-decoration: none; /* Removes underline from links */
+    color: #007bff; /* Bootstrap blue color for links */
+  }
+  
+
+  
+  /* Alignment */
+  footer {
+    display: flex; /* Enables flexible layout */
+    justify-content: space-between; /* Distributes space evenly */
+    flex-wrap: wrap; /* Wraps content on smaller screens */
+  }
+  
+  footer ul,
+  footer p {
+    flex: 1 1 30%; /* Ensures each block takes up equal space */
+  }
+  
+  
+  
+  footer p {
+    text-align: left; /* Centers paragraphs */
+  }
+  
+  footer p:last-child {
+    text-align: right; /* Aligns the last contact paragraph to the right */
+  }
+  
+  
