@@ -93,66 +93,316 @@ p{
     display: flex;
 }
   
+.footer {
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
 
- /* Footer Styling */
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+  font-size: 10px;
+  color: #555;
+}
+
+.footer-section ul li:hover {
+  color: #f9fafc; /* Hover color for links */
+  cursor: pointer;
+}
+
+.footer-section .contact-info p {
+  margin: 5px 0;
+  font-size: 13px;
+  color: #444;
+}
+
+.footer-section .contact-info p:hover {
+  color: #007BFF; /* Hover effect for contact info */
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  color: #fff;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Contact Page */
+.contact-page {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.info-box {
+  margin-bottom: 15px;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button.submit-btn {
+ 
+  color: rgb(187, 171, 171);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
 footer {
-    background-color: #f8f9fa; /* Light gray background */
-    padding: 20px; /* Adds padding inside the footer */
-    font-size: 0.9rem; /* Slightly smaller font size */
-    color: #333; /* Dark gray text */
-    border-top: 1px solid #ddd; /* Subtle top border */
-  }
-  
-  /* Styling the list */
-  footer ul {
-    list-style-type: none; /* Removes bullet points */
-    padding: 0; /* Removes default padding */
-    margin: 0 0 10px 0; /* Adds spacing below the list */
-  }
-  
-  footer ul h6 {
-    font-weight: bold; /* Bold title for the list */
-    margin-bottom: 10px; /* Adds spacing below the title */
-  }
-  
-  footer ul li {
-    margin-bottom: 5px; /* Adds spacing between list items */
-  }
-  
-  /* Footer paragraphs */
-  footer p {
-    margin: 10px 0; /* Adds spacing between paragraphs */
-    font-size: 0.9rem; /* Slightly smaller font size for consistency */
-  }
-  
-  /* Footer links */
-  footer a {
-    text-decoration: none; /* Removes underline from links */
-    color: #007bff; /* Bootstrap blue color for links */
-  }
-  
+   background-color: #f5f5f5; /* Light gray background */
+  ;
+  color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
+footer .quick-access ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .quick-access ul li {
+  margin-bottom: 10px;
+}
+
+footer .quick-access ul li a {
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+footer .quick-access ul li a:hover {
+  color: black;
+}
+
+footer .footer-info {
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer div:last-child {
+  text-align: right;
+}
+/*login */
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-form {
+  flex: 1;
+  max-width: 400px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
   
-  /* Alignment */
-  footer {
-    display: flex; /* Enables flexible layout */
-    justify-content: space-between; /* Distributes space evenly */
-    flex-wrap: wrap; /* Wraps content on smaller screens */
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #444;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+ 
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.login-form .forgot-password {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #e63946;
+  text-decoration: none;
+}
+
+.login-form .forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: white;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  background-color: white;
+}
+
+/* Styling for the image section */
+.login-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
   }
-  
-  footer ul,
-  footer p {
-    flex: 1 1 30%; /* Ensures each block takes up equal space */
+
+  .login-form {
+    margin-bottom: 20px;
   }
-  
-  
-  
-  footer p {
-    text-align: left; /* Centers paragraphs */
-  }
-  
-  footer p:last-child {
-    text-align: right; /* Aligns the last contact paragraph to the right */
-  }
-  
-  
+}
